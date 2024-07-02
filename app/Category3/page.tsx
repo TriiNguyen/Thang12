@@ -5,6 +5,7 @@ const Category3 = () => {
   return (
     <div>
       <Image
+        rel="preload"
         width={0}
         height={0}
         sizes="100vw"

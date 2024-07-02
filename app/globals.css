@@ -87,10 +87,12 @@ a {
 }
 
 .navBar {
+	position: fixed;
+	top: 0;
 	display: flex;
 	justify-content: space-between;
 	/*background-color: plum;*/
-	background-color: transparent;
+	background-color: white;
 	padding: 20px 200px 20px 200px;
 	width: 100%;
 }

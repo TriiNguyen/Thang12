@@ -17,7 +17,7 @@ const routes = [
   },
   {
     path: "/Category1",
-    name: "When Ly met Kathy",
+    name: "When Ly Met Kathy",
   },
   {
     path: "/Category2",

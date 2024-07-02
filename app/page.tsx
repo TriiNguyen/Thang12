@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div className="Wrapper">
       <Image
+        rel="preload"
         width={0}
         height={0}
         sizes="100vw"
