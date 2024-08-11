@@ -13,6 +13,9 @@ const TraditionalCeremony = () => {
           <p>loading</p>
         ) : (
           <Image
+            //placeholder="blur"
+            quality={100}
+            priority
             onLoad={() => setloading(false)}
             key={item.name}
             rel="preload"

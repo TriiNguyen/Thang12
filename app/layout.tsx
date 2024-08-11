@@ -65,7 +65,7 @@ export default function RootLayout({
               return (
                 <div
                   className={myFont.className}
-                  style={{ fontWeight: 300 }}
+                  style={{ fontWeight: 300, color: "black" }}
                   key={route.path}
                 >
                   <Link href={route.path}>{route.name}</Link>

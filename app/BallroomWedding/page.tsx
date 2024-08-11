@@ -7,6 +7,9 @@ const BallroomWedding = () => {
       {ballroomWedding.map((item: Data) => {
         return (
           <Image
+            //placeholder="blur"
+            quality={100}
+            priority
             key={item.name}
             rel="preload"
             width={0}
