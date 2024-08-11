@@ -1,5 +1,4 @@
 import Image from "next/image";
-import image from "../public/images/TMH.png";
 import "./page.module.css";
 
 export default function Home() {
@@ -11,7 +10,9 @@ export default function Home() {
         height={0}
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
-        src={image}
+        src={
+          "https://thang12.s3.ap-southeast-1.amazonaws.com/TMH_port+1_web-opening.jpg"
+        }
         alt="Thang12"
       />
     </div>
