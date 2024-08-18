@@ -1,55 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import localFont from "next/font/local";
+
+import { Navbar } from "../src/components/Navbar";
+import Footer from "@/src/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const routes = [
-  {
-    path: "/",
-    name: "Tháng mười hai",
-  },
-  {
-    path: "/TraditionalCeremony",
-    name: "Traditional Ceremony",
-  },
-  {
-    path: "/PrivateParty",
-    name: "Private Party",
-  },
-  {
-    path: "/DinningTableDecor",
-    name: "Dinning Table Decor",
-  },
-  {
-    path: "/DestinationWedding",
-    name: "Destination Wedding",
-  },
-  {
-    path: "/BallroomWedding",
-    name: "Ballroom Wedding",
-  },
-];
 export const metadata: Metadata = {
   title: "Thang 12",
   description: "",
 };
-
-const myFont = localFont({
-  src: [
-    {
-      path: "./font/Gotham-MediumIta.otf",
-      weight: "400",
-    },
-    {
-      path: "./font/Gotham-Medium.otf",
-      weight: "300",
-    },
-  ],
-  display: "swap",
-});
 
 export default function RootLayout({
   children,
@@ -58,22 +19,38 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="https://thang12.s3.ap-southeast-1.amazonaws.com/TRADITIONAL+CEREMONY/TMH_port+1_web-T01.jpg"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://thang12.s3.ap-southeast-1.amazonaws.com/PRIVATE+PARTY/TMH_port+1_web-P01.jpg"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TMH_port+1_web-28.jpg"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://thang12.s3.ap-southeast-1.amazonaws.com/DESTINATION+WEDDING/TMH_port+1_web-D01.jpg"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://thang12.s3.ap-southeast-1.amazonaws.com/BALLROOM+WEDDING/TMH_port+1_web-05.jpg"
+        />
+      </head>
       <body className={inter.className}>
         <div className="Wrapper">
-          <nav className="navBar">
-            {routes.map((route) => {
-              return (
-                <div
-                  className={myFont.className}
-                  style={{ fontWeight: 300, color: "black" }}
-                  key={route.path}
-                >
-                  <Link href={route.path}>{route.name}</Link>
-                </div>
-              );
-            })}
-          </nav>
+          <Navbar />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

@@ -3,7 +3,7 @@ import "./page.module.css";
 
 export default function Home() {
   return (
-    <div className="Wrapper">
+    <div style={{ marginTop: 60 }} className="Wrapper">
       <Image
         rel="preload"
         width={0}

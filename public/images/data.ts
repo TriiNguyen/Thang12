@@ -115,7 +115,7 @@ export const destinationWedding: Data[] = [
   },
   {
     name: "DestinationWedding10",
-    src: "https://thang12.s3.ap-southeast-1.amazonaws.com/DESTINATION+WEDDING/TMH_port+1_web-D010.jpg",
+    src: "https://thang12.s3.ap-southeast-1.amazonaws.com/DESTINATION+WEDDING/TMH_port+1_web-D10.jpg",
   },
 ];
 

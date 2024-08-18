@@ -3,7 +3,7 @@ import { Data, dinningTableDecor } from "@/public/images/data";
 
 const DinningTableDecor = () => {
   return (
-    <div>
+    <div style={{ marginTop: 60 }}>
       {dinningTableDecor.map((item: Data) => {
         return (
           <Image

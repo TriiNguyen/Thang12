@@ -3,7 +3,7 @@ import { ballroomWedding, Data } from "@/public/images/data";
 
 const BallroomWedding = () => {
   return (
-    <div>
+    <div style={{ marginTop: 60 }}>
       {ballroomWedding.map((item: Data) => {
         return (
           <Image

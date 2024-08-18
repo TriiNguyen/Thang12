@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PrivateParty = () => {
   return (
-    <div>
+    <div style={{ marginTop: 60 }}>
       {privateParty.map((item: Data) => {
         return (
           <Image
