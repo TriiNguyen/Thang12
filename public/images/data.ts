@@ -1,6 +1,7 @@
 export type Data = {
   name: string;
   src: string;
+  placeholder?: { src: string; placeholder: string };
 };
 
 export const traditionalCeremony: Data[] = [

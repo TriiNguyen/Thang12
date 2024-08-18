@@ -40,6 +40,7 @@
   justify-content: space-between;
   font-weight: 300;
   font-size: 16px;
+  gap: 20px;
 }
 
 .Socials {
@@ -48,13 +49,10 @@
   width: 10%;
   justify-content: space-between;
   cursor: pointer;
+  gap: 10px;
 }
 
 .SocialsItem {
   width: 25px;
   height: 25px;
-}
-
-.Description {
-  margin-top: 40px;
 }

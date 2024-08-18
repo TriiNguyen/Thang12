@@ -1,28 +1,32 @@
-"use client";
-
 import Image from "next/image";
 import { Data, traditionalCeremony } from "@/public/images/data";
 import { useState } from "react";
+import { getPlaceholderImage } from "@/src/utils/utils";
 
-const TraditionalCeremony = () => {
-  const [loading, setloading] = useState(false);
+const TraditionalCeremony = async () => {
+  const imageWithPlaceholder = await Promise.all(
+    traditionalCeremony.map(async (item) => {
+      const imageWithPlaceholder = await getPlaceholderImage(item.src);
+      return {
+        ...item,
+        placeholder: imageWithPlaceholder,
+      };
+    })
+  );
   return (
     <div style={{ marginTop: 60 }}>
-      {traditionalCeremony.map((item: Data) => {
-        return loading ? (
-          <p>loading</p>
-        ) : (
+      {imageWithPlaceholder.map((item: Data) => {
+        return (
           <Image
-            //placeholder="blur"
+            placeholder="blur"
+            blurDataURL={item?.placeholder?.placeholder ?? ""}
             quality={100}
             priority
-            onLoad={() => setloading(false)}
             key={item.name}
             rel="preload"
             width={1200}
-            height={500}
-            //sizes="(max-width: 768px) 60vw, (max-width: 1200px) 80vw, 100vw"
-            sizes="100vw"
+            height={1200}
+            sizes="(max-width: 768px) 60vw, (max-width: 1200px) 80vw, 100vw"
             style={{ width: "100%", height: "auto" }}
             src={item.src}
             alt="Thang12"

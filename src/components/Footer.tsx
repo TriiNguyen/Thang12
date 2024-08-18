@@ -54,10 +54,6 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className={css.Description}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
-        accusantium, minima veritatis molestias, beatae sit facilis corrupti
-      </div>
     </div>
   );
 };
