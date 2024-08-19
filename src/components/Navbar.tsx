@@ -53,7 +53,6 @@ export const Navbar = () => {
   return (
     <div>
       <nav className={css.navBar}>
-        1234
         {routes.map((route) => {
           return (
             <Link
@@ -64,8 +63,8 @@ export const Navbar = () => {
                 color: "black",
               }}
               key={route.path}
-              //  rel="prefetch"
-              //  prefetch={true}
+              rel="prefetch"
+              prefetch={true}
             >
               {route.name.toUpperCase()}
             </Link>
