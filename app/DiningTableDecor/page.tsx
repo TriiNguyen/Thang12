@@ -25,7 +25,7 @@ const DinningTableDecor = async () => {
             rel="preload"
             width={1200}
             height={1200}
-            sizes="(max-width: 768px) 60vw, (max-width: 1200px) 80vw, 100vw"
+            sizes="(max-width: 768px) 60vw, (max-width: 1300px) 80vw, 100vw"
             style={{ width: "100%", height: "auto" }}
             src={item.src}
             alt="Thang12"

@@ -63,7 +63,8 @@ export const Navbar = () => {
                 color: "black",
               }}
               key={route.path}
-              rel="preload"
+              rel="prefetch"
+              prefetch={true}
             >
               {route.name.toUpperCase()}
             </Link>
