@@ -24,56 +24,6 @@ export default function RootLayout({
           rel="preconnect"
           href="https://ap-southeast-1.console.aws.amazon.com/"
         />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/TRADITIONAL+CEREMONY/TMH_port+1_web-T01.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/TRADITIONAL+CEREMONY/TMH_port+1_web-T02.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/PRIVATE+PARTY/TMH_port+1_web-P01.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/PRIVATE+PARTY/TMH_port+1_web-P02.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TMH_port+1_web-28.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TMH_port+1_web-29.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/DESTINATION+WEDDING/TMH_port+1_web-D01.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/DESTINATION+WEDDING/TMH_port+1_web-D02.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/BALLROOM+WEDDING/TMH_port+1_web-05.jpg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://thang12.s3.ap-southeast-1.amazonaws.com/BALLROOM+WEDDING/TMH_port+1_web-06.jpg"
-        />
       </head>
       <body className={inter.className}>
         <div className="Wrapper">
