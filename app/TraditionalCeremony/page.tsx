@@ -26,7 +26,7 @@ const TraditionalCeremony = async () => {
             rel="preload"
             width={1200}
             height={1200}
-            sizes="(max-width: 768px) 40vw, (max-width: 1500px) 60vw, 80vw"
+            sizes="(max-width: 768px) 30vw, (max-width: 1500px) 50vw, 70vw"
             style={{ width: "100%", height: "auto" }}
             src={item.src}
             alt="Thang12"
