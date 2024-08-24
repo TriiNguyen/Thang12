@@ -1,7 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import "./page.module.css";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    console.log("haha");
+    router.prefetch("/DestinationWedding");
+  }, []);
+
   return (
     <div style={{ marginTop: 60 }} className="Wrapper">
       <Image
