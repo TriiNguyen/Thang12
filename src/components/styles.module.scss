@@ -20,6 +20,7 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out; /* Add transition property */
+  font-size: 15px;
 }
 
 .Link:hover {
@@ -35,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
   flex-direction: column;
   color: black;
 }

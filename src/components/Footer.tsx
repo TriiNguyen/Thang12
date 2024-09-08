@@ -7,11 +7,14 @@ import fb from "../../public/images/facebook.svg";
 import ins from "../../public/images/instagram.svg";
 import gmail from "../../public/images/gmail.svg";
 import Link from "next/link";
+import Logo from "../../public/images/TMH_logo.svg";
 
 const Footer = () => {
   return (
     <div className={clsx(css.Wrapper, myFont.className)}>
-      <div className={css.thang12}>THANGMUOIHAI</div>
+      <div className={css.thang12}>
+        <Image width={500} alt="thang12" src={Logo} />
+      </div>
       <div className={css.Categories}>
         <span>Destination Wedding</span>
         <span>Ballroom Wedding</span>
