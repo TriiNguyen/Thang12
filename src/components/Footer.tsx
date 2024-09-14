@@ -13,14 +13,14 @@ const Footer = () => {
   return (
     <div className={clsx(css.Wrapper, myFont.className)}>
       <div className={css.thang12}>
-        <Image width={500} alt="thang12" src={Logo} />
+        <Image width={300} alt="thang12" src={Logo} />
       </div>
       <div className={css.Categories}>
         <span>Destination Wedding</span>
         <span>Ballroom Wedding</span>
         <span>Traditional Ceremony</span>
         <span>Private Party </span>
-        <span>Dining Table Decor </span>
+        <span>Table Decoration </span>
       </div>
       <div className={css.Socials}>
         <Link

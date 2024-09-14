@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Data, dinningTableDecor } from "@/public/images/data";
 import { getPlaceholderImage } from "@/src/utils/utils";
 
-const DinningTableDecor = async () => {
+const TableDecoration = async () => {
   const imageWithPlaceholder = await Promise.all(
     dinningTableDecor.map(async (item) => {
       const imageWithPlaceholder = await getPlaceholderImage(item.src);
@@ -36,4 +36,4 @@ const DinningTableDecor = async () => {
   );
 };
 
-export default DinningTableDecor;
+export default TableDecoration;

@@ -65,15 +65,15 @@ export const privateParty: Data[] = [
 export const dinningTableDecor: Data[] = [
   {
     name: "DinningTableDecor1",
-    src: "https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TMH_port+1_web-28.jpg",
+    src: "https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TableDecoration1.jpg",
   },
   {
     name: "DinningTableDecor2",
-    src: "https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TMH_port+1_web-29.jpg",
+    src: "https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TableDecoration2.jpg",
   },
   {
     name: "DinningTableDecor3",
-    src: "https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TMH_port+1_web-30.jpg",
+    src: "https://thang12.s3.ap-southeast-1.amazonaws.com/DINING+TABLE+DECOR/TableDecoration3.jpg",
   },
 ];
 
