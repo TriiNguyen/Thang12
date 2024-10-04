@@ -28,6 +28,7 @@ const TraditionalCeremony = async () => {
             blurDataURL={item?.placeholder?.placeholder ?? ""}
             src={item.src}
             alt="Thang12"
+            quality={100}
           />
         );
       })}

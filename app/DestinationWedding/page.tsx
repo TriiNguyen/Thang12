@@ -23,6 +23,7 @@ const DestinationWedding = async () => {
             height={1200}
             sizes="(max-width: 768px) 60vw, (max-width: 1500px) 80vw, 100vw"
             style={{ width: "100%", height: "auto" }}
+            quality={100}
             placeholder="blur"
             blurDataURL={item?.placeholder?.placeholder ?? ""}
             src={item.src}
