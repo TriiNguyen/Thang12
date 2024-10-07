@@ -1,13 +1,14 @@
 .mobileImage {
-	display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 720px) {
-	.desktopImage {
-		display: none;
-	}
+  .desktopImage {
+    display: none;
+  }
 
-	.mobileImage {
-		display: block;
-	}
+  .mobileImage {
+    display: block;
+    margin-top: -60px;
+  }
 }
