@@ -27,7 +27,7 @@ export default function Home() {
         priority
         width={1200}
         height={1200}
-        style={{ width: "100%", height: "auto" }}
+        style={{ width: "100%", height: "100vh", objectFit: "cover" }}
         sizes="(max-width: 768px) 60vw, (max-width: 1300px) 80vw, 100vw"
         src={Mobile}
         alt="Thang12"
