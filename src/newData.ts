@@ -37,11 +37,23 @@ const nyVy = array3.map((item) => ({
   src: `https://thang12.s3.ap-southeast-1.amazonaws.com/1.+DESTINATION+WEDDING/1.5+Ny+Vy%CC%83/TMH_Ny+Vy-0${item}.jpg`,
 }));
 
+const vowsHienRyan = array6.map((item) => ({
+  name: `vowsHienRyan${item}`,
+  src: `https://thang12.s3.ap-southeast-1.amazonaws.com/1.+DESTINATION+WEDDING/1.5+Hie%CC%82%CC%80n+Ryan+Vows/TMH_Vows_Hie%CC%82%CC%80n%26Ryan-0${item}.jpg`,
+}));
+
+const vowsMiaSG = array6.map((item) => ({
+  name: `vowsMiaSG${item}`,
+  src: `https://thang12.s3.ap-southeast-1.amazonaws.com/1.+DESTINATION+WEDDING/1.6+TA+N+Vows+-+MiaSG/TMH_Vows_TA%26N+MiaSG-0${item}.jpg`,
+}));
+
 export const destinationWedding: Data[] = [
   ...trithanh,
   ...linhkong,
   ...kathyUyen,
   ...minhHuy,
+  ...vowsHienRyan,
+  ...vowsMiaSG,
   ...nyVy,
 ];
 
@@ -66,11 +78,29 @@ const chloe = array3.map((item) => ({
   src: `https://thang12.s3.ap-southeast-1.amazonaws.com/2.+BALLROOM+WEDDING/2.4+Chloe+(Trang+Peter)/TMH_Trang+Peter-0${item}.jpg`,
 }));
 
+const maiDinh = array6.map((item) => ({
+  name: `maiDinh${item}`,
+  src: `https://thang12.s3.ap-southeast-1.amazonaws.com/2.+BALLROOM+WEDDING/2.1+(mo%CC%9B%CC%81i)+Mai+%C4%90i%CC%A3nh/TMH_NH_Mai%26%C4%90i%CC%A3nh+11-1-25-0${item}.jpg`,
+}));
+
+const taNLongAn = array6.map((item) => ({
+  name: `taNLongAn${item}`,
+  src: `https://thang12.s3.ap-southeast-1.amazonaws.com/2.+BALLROOM+WEDDING/2.3+(mo%CC%9B%CC%81i)+TA+N+-+Long+An/TMH_NH_TA%26N+Long+An-0${item}.jpg`,
+}));
+
+const hienRyanSofitel = array6.map((item) => ({
+  name: `hienRyanSofitel${item}`,
+  src: `https://thang12.s3.ap-southeast-1.amazonaws.com/2.+BALLROOM+WEDDING/2.4+(mo%CC%9B%CC%81i)+Hie%CC%82%CC%80n+Ryan+-+Sofitel/TMH_NH_Hie%CC%82%CC%80n%26Ryan-0${item}.jpg`,
+}));
+
 export const ballroomWedding: Data[] = [
+  ...maiDinh,
   ...khueDao,
-  ...linhLuan,
-  ...tinaNico,
+  ...taNLongAn,
+  ...hienRyanSofitel,
+  //  ...linhLuan,
   ...chloe,
+  ...tinaNico,
 ];
 
 //private party
@@ -89,7 +119,17 @@ const thanhNgoc = array2.map((item) => ({
   src: `https://thang12.s3.ap-southeast-1.amazonaws.com/3.+PRIVATE+PARTY/3.3+Thanh+Ngo%CC%A3c/TMH_Thanh+Ngoc-0${item}.jpg`,
 }));
 
-export const privateParty: Data[] = [...tranVinh, ...tangThanhHa, ...thanhNgoc];
+const miaSG = array6.map((item) => ({
+  name: `miaSG${item}`,
+  src: `https://thang12.s3.ap-southeast-1.amazonaws.com/3.+PRIVATE+PARTY/3.4+(mo%CC%9B%CC%81i)+TA+N+Tie%CC%A3%CC%82c+-+MiaSG/TMH_Tie%CC%A3%CC%82c_TA%26N+MiaSG-0${item}.jpg`,
+}));
+
+export const privateParty: Data[] = [
+  ...tranVinh,
+  ...tangThanhHa,
+  ...thanhNgoc,
+  ...miaSG,
+];
 
 //traditional Ceremony
 const tinaNicoGiaTien = array6.map((item) => ({
@@ -122,6 +162,11 @@ const khanhDinh = array2.map((item) => ({
   src: `https://thang12.s3.ap-southeast-1.amazonaws.com/4.+TRADITIONAL+CEREMONY/4.6+Khanh+Dinh/TMH_Khanh+Dinh-0${item}.jpg`,
 }));
 
+const phongVy = array3.map((item) => ({
+  name: `phongVy${item}`,
+  src: `https://thang12.s3.ap-southeast-1.amazonaws.com/4.+TRADITIONAL+CEREMONY/4.7+(mo%CC%9B%CC%81i)+Phong+Vy/TMH_GT_Phong%26Vy-0${item}.jpg`,
+}));
+
 export const traditionalCeremony: Data[] = [
   ...tinaNicoGiaTien,
   ...huyMic,
@@ -129,6 +174,7 @@ export const traditionalCeremony: Data[] = [
   ...vietHoa,
   ...khanhNguyen,
   ...khanhDinh,
+  ...phongVy,
 ];
 
 //table decoration
